@@ -26,3 +26,11 @@ i {
     background-color: #EEE;
     color: #CCC
 }
+
+.fa.fa-trash:hover {
+    color: seagreen;
+}
+
+.card.completed .card-footer .fa.fa-trash:hover{
+    color: seagreen;
+}

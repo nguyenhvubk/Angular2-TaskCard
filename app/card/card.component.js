@@ -12,9 +12,13 @@ var core_1 = require('@angular/core');
 var task_1 = require('../model/task');
 var CardComponent = (function () {
     function CardComponent() {
+        this.notDeleted = true;
     }
     CardComponent.prototype.statusToggle = function () {
         this.task.completed = !this.task.completed;
+    };
+    CardComponent.prototype.deleteCard = function () {
+        this.notDeleted = false;
     };
     __decorate([
         core_1.Input(), 
