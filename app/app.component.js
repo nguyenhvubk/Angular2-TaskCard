@@ -14,6 +14,10 @@ var AppComponent = (function () {
     function AppComponent() {
         this.tasks = [
             new task_1.Task("Buy a monkey", false),
+            new task_1.Task("Walk the turtle", false),
+            new task_1.Task("Walk the turtle", false),
+            new task_1.Task("Walk the turtle", false),
+            new task_1.Task("Walk the turtle", false),
             new task_1.Task("Walk the turtle", false)
         ];
     }
@@ -21,7 +25,8 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-app',
-            templateUrl: 'app.component.html'
+            templateUrl: 'app.component.html',
+            styleUrls: ['app.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
