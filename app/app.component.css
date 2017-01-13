@@ -10,9 +10,15 @@ form {
     text-align: center;
 }
 
-.btn-primary {
+.btn,
+.btn:disabled:hover {
     background-color: #009688;
     border-color: #009688;
+}
+
+.btn:hover {
+    background-color: #00796B;
+    border-color: #00796B;
 }
 
 button {
@@ -25,4 +31,10 @@ button {
 
 i {
     padding-right: .4rem;
+}
+
+h5 {
+    color: #CCC;
+    text-align: center;
+    margin-top: 3rem;
 }
