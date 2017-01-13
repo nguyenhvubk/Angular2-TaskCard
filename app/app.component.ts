@@ -8,33 +8,12 @@ import { Task } from './model/task'
     styleUrls: [ 'app.component.css' ]
 })
 export class AppComponent {
-    private tasks = [
-        new Task(
-            "Buy a monkey",
-            false
-        ),
-        new Task(
-            "Walk the turtle",
-            false
-        ),
-        new Task(
-            "Walk the turtle",
-            false
-        ),
-        new Task(
-            "Walk the turtle",
-            false
-        ),
-        new Task(
-            "Walk the turtle",
-            false
-        )
-    ]
+    private tasks: Task[] = [];
+
     private currentTask = new Task(null,false);
 
     addTask() {
         let task = new Task(this.currentTask.content, this.currentTask.completed);
         this.tasks.push(task);
     }
-
  }
